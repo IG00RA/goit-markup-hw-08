@@ -1,0 +1,17 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-margin {
+  margin-bottom: 94px;
+}
+.section-gap {
+  display: flex;
+  gap: 30px;
+}
+.section-title {
+  margin-bottom: 50px;
+  @include font(36, 1.17);
+  text-align: center;
+  color: var(--tittle-text-color);
+}

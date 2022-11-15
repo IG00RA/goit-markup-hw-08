@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--bcgnd-hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  @include font(26, 1.19);
+  color: var(--logo-footer-color);
+  margin-bottom: 20px;
+  display: block;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-link,
+.footer-contact {
+  text-decoration: none;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-link {
+  color: var(--main-hero-color);
+}
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time-delay) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--secondary-link-color);
+  }
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  @extend %list-center;
+  width: 206px;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-social-link {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  @extend %list-center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--time-delay) var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-link-color);
+  }
+}
+
+.footer-social-icon {
+  fill: var(--bcgnd-color);
+}
+.footer-social-tittle {
+  @include font(14, 1.14);
+  text-transform: uppercase;
+  color: var(--bcgnd-color);
+  margin-bottom: 20px;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-subscribe-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @include font();
+  color: var(--bcgnd-color);
+  outline: transparent;
+  &::placeholder {
+    @include font();
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-btn {
+  color: var(--main-hero-color);
+  background-color: var(--secondary-link-color);
+  font-family: inherit;
+  font-weight: 700;
+  @include font(16, 1.88, 0.06);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  gap: 10px;
+  justify-content: center;
+  @extend %list-center;
+  padding: 13px 28px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  transition: background-color var(--time-delay) var(--timing-function);
+}

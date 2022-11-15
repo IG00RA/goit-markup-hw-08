@@ -1,0 +1,32 @@
+.features {
+  padding-bottom: 0;
+}
+.icons__icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features__icon {
+  margin-bottom: 30px;
+  @extend %list-center;
+  justify-content: center;
+}
+
+.icons__item {
+  width: 270px;
+}
+.features__title {
+  margin-bottom: 10px;
+}
+.icons__title {
+  @include font(14, 1.14);
+  text-transform: uppercase;
+  color: var(--tittle-text-color);
+}
+
+.icons__text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

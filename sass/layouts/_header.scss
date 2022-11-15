@@ -1,0 +1,114 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+  position: fixed;
+  width: 100%;
+  background-color: var(--bcgnd-color);
+  z-index: 1;
+}
+
+.header__list {
+  display: flex;
+  gap: 50px;
+}
+.header__nav {
+  @extend %list-center;
+}
+.header__container {
+  @extend %list-center;
+}
+
+.header__contact {
+  margin-left: auto;
+  @extend %list-center;
+}
+.link {
+  text-decoration: none;
+  color: var(--tittle-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+.menu__link {
+  color: var(--tittle-text-color);
+  transition: color var(--time-delay) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--secondary-link-color);
+  }
+  &::after,
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--secondary-link-color);
+    position: absolute;
+    bottom: -32px;
+    transform: scaleX(0);
+    transition: transform var(--time-delay) var(--timing-function);
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+.contact__link {
+  color: var(--most-text-color);
+  transition: color var(--time-delay) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--secondary-link-color);
+  }
+  &::after,
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--secondary-link-color);
+    position: absolute;
+    bottom: -32px;
+    transform: scaleX(0);
+    transition: transform var(--time-delay) var(--timing-function);
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.logo {
+  text-decoration: none;
+  font-family: "Raleway";
+  @include font(26, 1.19);
+}
+.header__logo {
+  margin-right: 93px;
+  color: var(--logo-color);
+}
+
+.logo--blue {
+  color: var(--secondary-link-color);
+}
+
+.current {
+  color: var(--secondary-link-color);
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--secondary-link-color);
+    position: absolute;
+    bottom: -32px;
+  }
+}

@@ -1,0 +1,17 @@
+.card-set__item {
+  position: relative;
+}
+.card-set__tittle {
+  @include font(14, 1.14);
+  text-transform: uppercase;
+  color: var(--bcgnd-color);
+}
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  @extend %list-center;
+  justify-content: center;
+}
