@@ -3,3 +3,6 @@
   line-height: $height;
   letter-spacing: $spacing + em;
 }
+@mixin calc-width($count, $gap) {
+  width: calc((100% - $gap * ($count - 1)) / $count);
+}

@@ -1,17 +1,23 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section-margin {
-  margin-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section-gap {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .section-title {
-  margin-bottom: 50px;
-  @include font(36, 1.17);
+  margin-bottom: 30px;
+  @include font(28, 1.18);
   text-align: center;
   color: var(--tittle-text-color);
+  @media screen and (min-width: 1200px) {
+    @include font(36, 1.17);
+    margin-bottom: 50px;
+  }
 }
