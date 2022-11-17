@@ -1,8 +1,11 @@
 .features {
   padding-bottom: 0;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 }
 .icons__icon {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -15,7 +18,13 @@
 }
 
 .icons__item {
-  width: 270px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    @include calc-width(2, 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include calc-width(4, 30px);
+  }
 }
 .features__title {
   margin-bottom: 10px;
@@ -24,6 +33,9 @@
   @include font(14, 1.14);
   text-transform: uppercase;
   color: var(--tittle-text-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .icons__text {

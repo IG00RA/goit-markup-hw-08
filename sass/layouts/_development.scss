@@ -1,3 +1,9 @@
+.development {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .card-set__item {
   position: relative;
 }
