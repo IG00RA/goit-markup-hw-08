@@ -163,6 +163,11 @@ body {
   transition: transform var(--time-delay) var(--timing-function);
   padding: 40px;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 
 .modal-close {
   position: absolute;
@@ -198,6 +203,13 @@ body {
   text-align: center;
   color: var(--tittle-text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-tittle {
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
 }
 
 .input-label {
@@ -290,11 +302,24 @@ body {
   margin-left: 16px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
 
 .checkbox-icon {
   position: absolute;
   left: -10px;
   top: -1px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-icon {
+    left: 2px;
+    top: 3px;
+  }
 }
 .checkbox:checked ~ .checkbox-icon {
   opacity: 0;
@@ -305,6 +330,12 @@ body {
   position: absolute;
   left: -10px;
   top: -1px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-icon-check {
+    left: 2px;
+    top: 3px;
+  }
 }
 .checkbox:checked ~ .checkbox-icon-check {
   opacity: 1;
