@@ -22,10 +22,10 @@
 .clients-item {
   @include calc-width(2, 30px);
   height: 92px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     @include calc-width(3, 30px);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include calc-width(6, 30px);
   }
 }

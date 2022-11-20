@@ -161,19 +161,25 @@
                 <h2 class="card-set__caption section-title">Чим ми займаємося</h2>
                 <ul class="card-set__list section-gap">
                     <li class="card-set__item list">
-                        <img class="card-set__img" src="./images/back-end.jpg" width="370" alt="Десктопні додатки">
+                        <img srcset="./images/development/desktop.jpg 1x, ./images/development/desktop-2x.jpg 2x"
+                            class="card-set__img" src="./images/development/desktop.jpg" width="370"
+                            alt="Десктопні додатки">
                         <div class="wrapper">
                             <h3 class="card-set__tittle">Десктопні додатки</h3>
                         </div>
                     </li>
                     <li class="card-set__item list">
-                        <img class="card-set__img" src="./images/front-end.jpg" width="370" alt="Мобільні додатки">
+                        <img srcset="./images/development/mobile.jpg 1x, ./images/development/mobile-2x.jpg 2x"
+                            class="card-set__img" src="./images/development/mobile.jpg" width="370"
+                            alt="Мобільні додатки">
                         <div class="wrapper">
                             <h3 class="card-set__tittle">Мобільні додатки</h3>
                         </div>
                     </li>
                     <li class="card-set__item list">
-                        <img class="card-set__img" src="./images/style.jpg" width="370" alt="Дизайнерські рішення">
+                        <img srcset="./images/development/style.jpg 1x, ./images/development/style-2x.jpg 2x"
+                            class="card-set__img" src="./images/development/style.jpg" width="370"
+                            alt="Дизайнерські рішення">
                         <div class="wrapper">
                             <h3 class="card-set__tittle">Дизайнерські рішення</h3>
                         </div>
@@ -186,8 +192,22 @@
                 <h2 class="people__tittle section-title">Наша команда</h2>
                 <ul class="people__list section-gap">
                     <li class="people__item list">
-                        <img class="team__img people__img" src="./images/igor.jpg" width="270"
-                            alt="Спеціаліст Ігор Дем'яненко">
+                        <picture>
+                            <source srcset="
+                                            ./images/team/igor.jpg    1x,
+                                            ./images/team/igor-2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+                            <source srcset="
+                                            ./images/team/igor-tab.jpg    1x,
+                                            ./images/team/igor-tab-2x.jpg 2x
+                                          " media="(min-width: 768px)" />
+                            <source srcset="
+                                            ./images/team/igor-mob.jpg    1x,
+                                            ./images/team/igor-mob-2x.jpg 2x
+                                          " media="(min-width: 320px)" />
+                            <img class="team__img people__img" src="./images/team/igor.jpg" width="450"
+                                alt="Спеціаліст Ігор Дем'яненко">
+                        </picture>
                         <h3 class="team__name people__name">Ігор Дем'яненко</h3>
                         <p class="team__text people__text">Product Designer</p>
                         <ul class="team__social-list people__social-list">
@@ -222,8 +242,23 @@
                         </ul>
                     </li>
                     <li class="people__item list">
-                        <img class="team__img people__img" src="./images/olga.jpg" width="270"
-                            alt="Спеціаліст Ольга Рєпіна">
+                        <picture>
+                            <source srcset="
+                                                                    ./images/team/olga.jpg    1x,
+                                                                    ./images/team/olga-2x.jpg 2x
+                                                                  " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                                    ./images/team/olga-tab.jpg    1x,
+                                                                    ./images/team/olga-tab-2x.jpg 2x
+                                                                  " media="(min-width: 768px)" />
+                            <source srcset="
+                                                                    ./images/team/olga-mob.jpg    1x,
+                                                                    ./images/team/olga-mob-2x.jpg 2x
+                                                                  " media="(min-width: 320px)" />
+                            <img class="team__img people__img" src="./images/team/olga.jpg" width="450"
+                                alt="Спеціаліст Ольга Рєпіна">
+                        </picture>
+
                         <h3 class="team__name people__name">Ольга Рєпіна</h3>
                         <p class="team__text people__text">Frontend Developer</p>
                         <ul class="team__social-list people__social-list">
@@ -258,8 +293,23 @@
                         </ul>
                     </li>
                     <li class="people__item list">
-                        <img class="team__img people__img" src="./images/mikola.jpg" width="270"
-                            alt="Спеціаліст Микола Тарасов">
+                        <picture>
+                            <source srcset="
+                                                                    ./images/team/mikola.jpg    1x,
+                                                                    ./images/team/mikola-2x.jpg 2x
+                                                                  " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                                    ./images/team/mikola-tab.jpg    1x,
+                                                                    ./images/team/mikola-tab-2x.jpg 2x
+                                                                  " media="(min-width: 768px)" />
+                            <source srcset="
+                                                                    ./images/team/mikola-mob.jpg    1x,
+                                                                    ./images/team/mikola-mob-2x.jpg 2x
+                                                                  " media="(min-width: 320px)" />
+                            <img class="team__img people__img" src="./images/team/mikola.jpg" width="450"
+                                alt="Спеціаліст Микола Тарасов">
+                        </picture>
+
                         <h3 class="team__name people__name">Микола Тарасов</h3>
                         <p class="team__text people__text">Marketing</p>
                         <ul class="team__social-list people__social-list">
@@ -294,8 +344,22 @@
                         </ul>
                     </li>
                     <li class="people__item list">
-                        <img class="team__img people__img" src="./images/mihaylo.jpg" width="270"
-                            alt="Спеціаліст Михайло Єрмаков">
+                        <picture>
+                            <source srcset="
+                                                                    ./images/team/mihaylo.jpg    1x,
+                                                                    ./images/team/mihaylo-2x.jpg 2x
+                                                                  " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                                    ./images/team/mihaylo-tab.jpg    1x,
+                                                                    ./images/team/mihaylo-tab-2x.jpg 2x
+                                                                  " media="(min-width: 768px)" />
+                            <source srcset="
+                                                                    ./images/team/mihaylo-mob.jpg    1x,
+                                                                    ./images/team/mihaylo-mob-2x.jpg 2x
+                                                                  " media="(min-width: 320px)" />
+                            <img class="team__img people__img" src="./images/team/mihaylo.jpg" width="450"
+                                alt="Спеціаліст Михайло Єрмаков">
+                        </picture>
                         <h3 class="team__name people__name">Михайло Єрмаков</h3>
                         <p class="team__text people__text">UI Designer</p>
                         <ul class="team__social-list people__social-list">

@@ -14,7 +14,7 @@
   @media screen and (min-width: 480px) {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 528px;
   }
   background-color: var(--bcgnd-color);
@@ -59,7 +59,7 @@
 .modal-tittle {
   font-weight: 700;
   @include font(20, 1.5);
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(20, 1.15);
   }
   text-align: center;
@@ -132,7 +132,7 @@
 
 .checkbox-label {
   @include font(12, 1.17);
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(14, 1.71);
   }
   color: var(--most-text-color);
@@ -146,7 +146,7 @@
   position: absolute;
   left: -10px;
   top: -1px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     left: 2px;
     top: 3px;
   }
@@ -159,7 +159,7 @@
   position: absolute;
   left: -10px;
   top: -1px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     left: 2px;
     top: 3px;
   }

@@ -11,10 +11,10 @@
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     @include calc-width(2, 30px);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include calc-width(4, 30px);
     padding-bottom: 30px;
   }

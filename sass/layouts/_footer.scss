@@ -14,7 +14,7 @@
 }
 .footer-item:not(:last-child) {
   margin-bottom: 8px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 9px;
   }
 }
@@ -46,7 +46,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     align-items: baseline;
     justify-content: space-between;
   }
@@ -88,7 +88,7 @@
 }
 
 .footer-subscribe-form {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     gap: 12px;
   }
@@ -99,7 +99,7 @@
     width: 450px;
     margin-top: 60px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 570px;
   }
 }
@@ -120,7 +120,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   margin-bottom: 20px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
   }
 }
