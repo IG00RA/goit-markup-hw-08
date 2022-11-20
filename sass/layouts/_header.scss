@@ -1,13 +1,13 @@
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     border-bottom: 1px solid #ececec;
     padding-top: 21px;
     padding-bottom: 21px;
     height: 80px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -19,7 +19,7 @@
 
 .header__list {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     gap: 50px;
   }
@@ -34,10 +34,10 @@
 
 .header__contact {
   margin-left: auto;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -106,12 +106,12 @@
 }
 .contact__icon {
   fill: currentColor;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 8px;
     width: 14px;
     height: 10px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 10px;
     width: 16px;
     height: 12px;
@@ -133,15 +133,15 @@
   text-decoration: none;
   font-family: "Raleway";
   @include font(24, 1.17);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     @include font(26, 1.19);
   }
 }
 .header__logo {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 87px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 93px;
   }
   color: var(--logo-color);
@@ -164,6 +164,19 @@
     bottom: -32px;
   }
 }
+// Mob Menu
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-hero-color);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  padding: 48px 40px;
+  overflow: auto;
+}
+
 .mob-button {
   padding: 0;
   border: none;
@@ -172,7 +185,7 @@
   height: 40px;
 }
 .mob-button--open {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -189,16 +202,7 @@
     transition: fill var(--time-delay) var(--timing-function);
   }
 }
-.mob-menu {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--main-hero-color);
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  padding: 48px 40px;
-  overflow: auto;
-}
+
 .mob-menu-wrap {
   position: relative;
   height: 100%;
@@ -227,6 +231,7 @@
   color: var(--most-text-color);
 }
 .current-mob {
+  color: var(--secondary-link-color);
 }
 .mob-contact {
   margin-bottom: 64px;
@@ -237,7 +242,7 @@
 .mob-contact__number {
   @include font(27, 1.18, 0.02);
   color: var(--secondary-link-color);
-  @media screen and (min-width: 480px) {
+  @include mobile {
     @include font(34, 1.18, 0.02);
   }
 }
@@ -256,7 +261,7 @@
       border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
   }
-  @media screen and (min-width: 480px) {
+  @include mobile {
     &:not(:last-child) {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
@@ -266,11 +271,8 @@
   @include font(18, 1.22, 0.02);
   color: var(--secondary-link-color);
 }
-.is-hidden {
+.mob-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  & .modal {
-    transform: translate(-50%, -50%) scaley(0) rotate(-180deg);
-  }
 }

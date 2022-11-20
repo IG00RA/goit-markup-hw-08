@@ -538,6 +538,17 @@ body {
   bottom: -32px;
 }
 
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-hero-color);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  padding: 48px 40px;
+  overflow: auto;
+}
+
 .mob-button {
   padding: 0;
   border: none;
@@ -561,17 +572,6 @@ body {
 .mob-menu-icon:hover, .mob-menu-icon:focus {
   fill: var(--secondary-link-color);
   transition: fill var(--time-delay) var(--timing-function);
-}
-
-.mob-menu {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--main-hero-color);
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  padding: 48px 40px;
-  overflow: auto;
 }
 
 .mob-menu-wrap {
@@ -606,6 +606,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--most-text-color);
+}
+
+.current-mob {
+  color: var(--secondary-link-color);
 }
 
 .mob-contact {
@@ -661,13 +665,10 @@ body {
   color: var(--secondary-link-color);
 }
 
-.is-hidden {
+.mob-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
-.is-hidden .modal {
-  transform: translate(-50%, -50%) scaley(0) rotate(-180deg);
 }
 
 .hero {
@@ -740,10 +741,15 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob-2x.jpg");
+  }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
